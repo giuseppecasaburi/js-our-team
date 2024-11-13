@@ -68,3 +68,27 @@ function assegnazione(teamMembers) {
   return cards;
 }
 rowElm.innerHTML = assegnazione(teamMembers); 
+
+const formElm = document.getElementById("form");
+const nameInputElm = document.getElementById("name");
+const roleInputElm = document.getElementById("role");
+const emailInputElm = document.getElementById("email");
+const imageInputElm = document.getElementById("image");
+
+formElm.addEventListener("submit", (event) => {
+  event.preventDefault()
+  const newMember = {
+    name: nameInputElm.value,
+    role: roleInputElm.value,
+    email: emailInputElm.value,
+    image: imageInputElm.value
+  };
+  
+  teamMembers.push(newMember);
+  rowElm.innerHTML = assegnazione(teamMembers); 
+})
+
+
+
+
+
