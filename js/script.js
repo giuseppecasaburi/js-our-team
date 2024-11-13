@@ -51,12 +51,12 @@ function assegnazione(teamMembers) {
     const { name, role, email, img } = teamMembers[i];
     cards += `
         <div class="col-3">
-          <div class="card">
+          <div class="card row">
             <div class="photo">
               <img src="./${img}" alt="">
             </div>
-            <div class="content">
-              <h2>${name}</h2>
+            <div class="content row">
+              <h3 class="name">${name}</h3>
               <span>${role}</span>
               <br>
               <a href="">${email}</a>
