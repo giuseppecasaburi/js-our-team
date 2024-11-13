@@ -1,0 +1,36 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* CLASSI UTILITY */
+.container {
+    width: 80%;
+    max-width: 1100px;
+    margin: 20px auto;
+}
+
+.row {
+    display: flex;
+}
+
+.col {
+    width: calc(100% / 3);
+}
+
+/* LAYOUT */
+.photo {
+    width: 30%;
+}
+
+.content {
+    width: 70%;
+}
+
+
