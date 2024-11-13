@@ -37,3 +37,34 @@ const teamMembers = [
   }
 ];
 
+const rowElm = document.querySelector(".row");
+
+/**
+ * Description
+ * @param {array} teamMembers
+ * @returns {string}
+ */
+function assegnazione(teamMembers) {
+  let cards = "";
+  for (let i = 0; i < teamMembers.length; i++) {
+    curItem = teamMembers[i];
+    const { name, role, email, img } = teamMembers[i];
+    cards += `
+        <div class="col-3">
+          <div class="card">
+            <div class="photo">
+              <img src="./${img}" alt="">
+            </div>
+            <div class="content">
+              <h2>${name}</h2>
+              <span>${role}</span>
+              <br>
+              <a href="">${email}</a>
+            </div>
+          </div>
+        </div>
+    `
+  }
+  return cards;
+}
+rowElm.innerHTML = assegnazione(teamMembers); 

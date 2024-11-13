@@ -18,10 +18,12 @@ img {
 
 .row {
     display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
-.col {
-    width: calc(100% / 3);
+.col-3 {
+    width: calc((100% - 30px) / 3);
 }
 
 /* LAYOUT */
