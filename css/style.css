@@ -107,5 +107,23 @@ input {
 }
 
 
+/* RESPONSIVE */
+@media screen and (max-width: 768px) {
+    .col-3 {
+        width: calc((100% - 50px) / 2);
+    }
+}
 
+@media screen and (max-width: 425px) {
+    .col-3 {
+        width: 100%;
+    }
 
+    .add-area {
+        width: 100%;
+        margin: 60px auto 0px;
+    
+        /* DEBUG */
+        border: 1px solid black;
+    }
+}
