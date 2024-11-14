@@ -63,6 +63,11 @@ a {
     width: 30%;
 }
 
+img {
+    height: 100%;
+    object-fit: cover;
+}
+
 .content {
     width: 70%;
     padding-left: 10px;
